@@ -61,7 +61,7 @@
                             Penyedia Jasa Pengangkutan dengan Profesionalisme kerja serta Komitman atas setiap pelayanan yang diberikan
                         </p>
                         <a class="btn btn-outline-primary js-scroll-trigger" href="#about">Learn More</a>
-                        <a class="btn btn-primary js-scroll-trigger" href="#getquote">Get Quote</a>
+                        <a class="btn btn-outline-primary js-scroll-trigger" href="#getquote">Get Quote</a>
                     </div>
                 </div>
             </div>
@@ -72,11 +72,11 @@
             <section id="about">
                 <div class="container">
                     <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">About Us</h2>
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading text-uppercase">About Us</h2>
+                        </div>
                     </div>
-                    </div>
-                    <div class="row text-center">
+                    <div class="row">
                         <p class="text-muted">
                             <b>PT. Garuda Angkasa Ekspres</b> adalah perusahaan yang bergerak di bidang Jasa Pengangkutan yang didirikan pada bulan Oktober 2011 oleh praktisi yang berpengalaman dibidangnya masing - masing.
                         </p>
@@ -88,14 +88,18 @@
                         </p>
                     </div>
                 </div>
+            </section>
+            
+            <!-- Visi Misi -->
+            <section id="visimisi">
                 <div class="container">
                     <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Vision</h2>
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading text-uppercase">Vision</h2>
+                        </div>
                     </div>
-                    </div>
-                    <div class="row text-center">
-                        <p class="text-muted">
+                    <div class="row">
+                        <p class="text-white">
                             Visi kami adalah menjadi perusahaan pengangkutan yang terdepan dalam memberikan jasa yang terbaik sehingga barang setiap mitra kami bisa sampai tujuan dengan selamat, tepat waktu dan menjadi pilihan utama pelanggan.
                         </p>
                     </div>
@@ -104,24 +108,47 @@
                         <h2 class="section-heading text-uppercase">Mission</h2>
                         </div>
                     </div>
-                    <div class="row text-center">
-                        <p class="text-muted">
+                    <div class="row">
+                        <p class="text-white">
                             Misi kami adalah memberikan jasa pengangkutan terbaik dengan nilai tambah kepada setiap mitra yang menjalin kerja sama dengan kami
                         </p>
                     </div>
                 </div>
+            </section>
+
+            <!-- Our Client -->
+            <section id="our-client">
                 <div class="container">
                     <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Our Client</h2>
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading text-uppercase">Our Client</h2>
+                        </div>
                     </div>
-                    </div>
-                    <div class="row text-center">
-                        <p class="text-muted">Gambar</p>
+                    <div class="row d-flex flex-row align-items-center">
+                        <div class="owl-carousel owl-theme" id="owl-client">
+                            <div class="item">
+                                <img src="{{ asset('/assets/img/client/chevron.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('/assets/img/client/golgon.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('/assets/img/client/growth_steel.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('/assets/img/client/Indonesia_Fibreboard.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('/assets/img/client/Putra_baja_deli.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="item">
+                                <img src="{{ asset('/assets/img/client/Wika_Beton.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            
+
             <!-- Get Quote -->
             <section id="getquote">
                 <div class="container">
@@ -168,14 +195,14 @@
             
             <!-- Our Fleets -->
             <section id="fleets">
-                <div class="container h-100">
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
                         <h2 class="section-heading text-uppercase">Our Fleets</h2>
                         </div>
                     </div>
                     <div class="row d-flex flex-row align-items-center">
-                        <div class="col-1 d-flex align-items-center justify-content-center">
+                        <div class="col-xs-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-center">
                             <a href="#carouselExampleControls" role="button" data-slide="prev">
                                 <div class="carousel-nav-icon">
                                     <span class="fas fa-chevron-left"></span>
@@ -185,7 +212,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-10">
+                        <div class="col-xs-7 col-md-10 col-lg-10">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -215,7 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1 d-flex align-items-center justify-content-center">
+                        <div class="col-xs-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-center">
                             <a href="#carouselExampleControls" role="button" data-slide="next">
                                 <div class="carousel-nav-icon">
                                     <span class="fas fa-chevron-right"></span>
@@ -233,7 +260,7 @@
             <section id="contact" class="pl-2">
                 <div class="container">
                     <div class="row justify-content-center text-white">
-                        <div class="col-6">
+                        <div class="col-xs-12 col-md-6">
                             <div class="row">
                                 <h4><b><u>PT. Garuda Angkasa Ekspres</u></b></h4>
                             </div>
@@ -262,16 +289,24 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <label>garuda_angkasa_ekspres@yahoo.com</label>
+                                <div class="" style="width: 12px;">
+                                    <span class="fa fa-envelope"></span>
+                                </div>
+                                <div class="col">
+                                    <label>garuda_angkasa_ekspres@yahoo.com</label>
+                                    <label>pt.garuda_angkasa_ekspres@yahoo.com</label>
+                                </div>
                             </div>
                             <div class="row">
-                                <label>pt.garuda_angkasa_ekspres@yahoo.com</label>
-                            </div>
-                            <div class="row">
-                                <label>(061) 694 1766, (061) 694 2079</label>
+                                <div class="" style="width: 12px;">
+                                    <span class="fa fa-fax"></span>
+                                </div>
+                                <div class="col">
+                                    <label>(061) 694 1766, (061) 694 2079</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-xs-12 col-md-6">
                             <div class="row">
                                 <h4><b>Our Location</b></h4>
                             </div>
@@ -296,7 +331,6 @@
         </footer>
 
         <a href="#page-top" class="back-to-top justify-content-center"><i class="fas fa-chevron-up"></i></a>
-
         <!-- jQuery -->
         <script src="{{ asset('/assets/vendor/jquery/jquery-3.4.1.min.js') }}"></script>
         <script src="{{ asset('/assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
@@ -308,7 +342,48 @@
         <!-- Owl Carousel -->
         <script src="{{ asset('/assets/vendor/owl-carousel/dist/owl.carousel.min.js') }}"></script>
 
-        <!-- Owl Carousel -->
+        <!-- Own JS -->
         <script src="{{ asset('/assets/js/gae.js') }}"></script>
+
+        <script>
+            $(document).ready(function() {
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    items: 3,
+                    loop: false,
+                    rewind: true,
+                    margin: 10,
+                    autoHeight:true,
+                    autoplay: true,
+                    autoplayTimeout: 1000,
+                    autoplayHoverPause: true,
+                    // responsive: {
+                    //     0: {
+                    //         items: 1,
+                    //         nav: true
+                    //     },
+                    //     480: {
+                    //         items: 2,
+                    //         nav: false
+                    //     },
+                    //     768: {
+                    //         items: 3,
+                    //         nav: true,
+                    //         loop: false
+                    //     },
+                    //     992: {
+                    //         items: 4,
+                    //         nav: true,
+                    //         loop: false
+                    //     }
+                    // },
+                    // responsiveRefreshRate: 200,
+                    // responsiveBaseElement: window,
+                    dots: false,
+                    nav: true,
+                    navText: ["<div class='nav-btn prev-slide'><span class='fas fa-chevron-left'></span></div>","<div class='nav-btn next-slide'><span class='fas fa-chevron-right'></span></div>"],
+                });
+            });
+        </script>
     </body>
 </html>
