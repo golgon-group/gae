@@ -125,24 +125,36 @@
                         </div>
                     </div>
                     <div class="row d-flex flex-row align-items-center">
-                        <div class="owl-carousel owl-theme" id="owl-client">
+                        <div class="carousel-client owl-carousel owl-theme" id="owl-client">
                             <div class="item">
-                                <img src="{{ asset('/assets/img/client/chevron.jpg') }}" alt="" class="img-fluid">
+                              <div class="animated">
+                                <img src="{{ asset('/assets/img/client/chevron.jpg') }}" alt="Chevron" class="client-image">
+                              </div>
                             </div>
                             <div class="item">
-                                <img src="{{ asset('/assets/img/client/golgon.jpg') }}" alt="" class="img-fluid">
+                              <div class="animated">
+                                <img src="{{ asset('/assets/img/client/golgon.jpg') }}" alt="Golgon" class="client-image">
+                              </div>
                             </div>
                             <div class="item">
-                                <img src="{{ asset('/assets/img/client/growth_steel.jpg') }}" alt="" class="img-fluid">
+                              <div class="animated">
+                                <img src="{{ asset('/assets/img/client/growth_steel.jpg') }}" alt="Growth Steel" class="client-image">
+                              </div>
                             </div>
                             <div class="item">
-                                <img src="{{ asset('/assets/img/client/Indonesia_Fibreboard.jpg') }}" alt="" class="img-fluid">
+                              <div class="animated">
+                                <img src="{{ asset('/assets/img/client/Indonesia_Fibreboard.jpg') }}" alt="Indonesia Fibreboard" class="client-image">
+                              </div>
                             </div>
                             <div class="item">
-                                <img src="{{ asset('/assets/img/client/Putra_baja_deli.jpg') }}" alt="" class="img-fluid">
+                              <div class="animated">
+                                <img src="{{ asset('/assets/img/client/Putra_baja_deli.jpg') }}" alt="Putra Baja Deli" class="client-image">
+                              </div>
                             </div>
                             <div class="item">
-                                <img src="{{ asset('/assets/img/client/Wika_Beton.jpg') }}" alt="" class="img-fluid">
+                              <div class="animated">
+                                <img src="{{ asset('/assets/img/client/Wika_Beton.jpg') }}" alt="Wika Beton" class="client-image">
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -151,46 +163,80 @@
 
             <!-- Get Quote -->
             <section id="getquote">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5">
-                            <form class="contact-form">
-                                <div class="text-center">
-                                    <h2 class="section-heading text-uppercase">
-                                        Get Quotation
-                                    </h2>
-                                </div>
-                                <div class="form-group">
-                                    <label>Your Name*</label>
-                                    <input class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    <label>Your E-Mail Address*</label>
-                                    <input class="form-control" type="email" />
-                                </div>
-                                <div class="form-group">
-                                    <label>Your Location*</label>
-                                    <input class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    <label>To Destination</label>
-                                    <input class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    <label>Your Message*</label>
-                                    <input class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    <label>Your Message*</label>
-                                    <input class="form-control" />
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary">Request A Quote</button>
-                                </div>
-                            </form>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-7 col-lg-6">
+                    {!! Form::open(['url' => route('send.postQuotation'), 'class' => 'contact-form', 'method' => 'post', 'id' => 'contact_form','files' => true ]) !!}
+                      <div class="text-center">
+                        <h2 class="section-heading text-uppercase">
+                          Get Quotation
+                        </h2>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            {!! Form::label('Full Name*') !!}
+                            {!! Form::text('fullname', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => 'required', 'data-msg' => 'Please input your full name']); !!}
+                            <div class="validate"></div>
+                          </div>
                         </div>
-                    </div>
+                        <div class="col">
+                          <div class="form-group">
+                            {!! Form::label('Contact Number*') !!}
+                            {!! Form::text('contact', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => 'minlen:12', 'data-msg' => 'Please enter at least 12 number', 'data-inputmask' => "'mask': '+62 999-9999-9999'"]); !!}
+                            <div class="validate"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        {!! Form::label('E-Mail Address*') !!}
+                        {!! Form::email('email', null, ['class' => 'form-control','placeholder' => 'mail@example.com', 'data-rule' => 'email', 'data-msg' => 'Please input valid email']); !!}
+                        <div class="validate"></div>
+                      </div>
+                      {{-- <div class="form-group">
+                        {!! Form::label('Subject*') !!}
+                        {!! Form::text('subject', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => 'required', 'data-msg' => 'Please input Subject']); !!}
+                        <div class="validate"></div>
+                      </div> --}}
+                      {{-- <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            {!! Form::label('Location*') !!}
+                            {!! Form::text('location', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => 'required', 'data-msg' => 'Please input valid location']); !!}
+                            <div class="validate"></div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            {!! Form::label('Destination*') !!}
+                            {!! Form::text('destination', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => 'required', 'data-msg' => 'Please input valid destination']); !!}
+                            <div class="validate"></div>
+                          </div>
+                        </div>
+                      </div> --}}
+                      <div class="form-group">
+                        <div class="form-group">
+                          {!! Form::label('Message*') !!}
+                          {!! Form::textarea('keterangan', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => "required", 'data-msg' => "Please write something for us"]); !!}
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        @if (session('status'))
+                          {{-- <input type="hidden" id="status_span" data-status="{{ session('status.success') }}" data-msg="{{ session('status.msg') }}"> --}}
+                          <div class="{{ session('status.class') }}">{{ session('status.msg') }}</div>
+                        @endif
+                        {{-- <div class="error-message"></div>
+                        <div class="sent-message">{{ session('status.msg') }}</div> --}}
+                      </div>
+                      <div class="text-center">
+                        <button type="submit">Request A Quote</button>
+                      </div>
+                    {!! Form::close() !!}
+                  </div>
                 </div>
+              </div>
             </section>
             
             <!-- Our Fleets -->
@@ -201,57 +247,41 @@
                         <h2 class="section-heading text-uppercase">Our Fleets</h2>
                         </div>
                     </div>
-                    <div class="row d-flex flex-row align-items-center">
-                        <div class="col-xs-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-center">
-                            <a href="#carouselExampleControls" role="button" data-slide="prev">
-                                <div class="carousel-nav-icon">
-                                    <span class="fas fa-chevron-left"></span>
-                                    {{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
-                                     </svg> --}}
-                                </div>
-                            </a>
+                    <div id="fleet-carousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{{ asset('/assets/img/truck/dump-truck.png') }}" class="d-block w-100" alt="Fuso Trailer 10 Piston" />
                         </div>
-                        <div class="col-xs-7 col-md-10 col-lg-10">
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/dump-truck.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/fuso-trailer-8-piston.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/fuso-trailer-10-piston.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/Gandengan-12m.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/gandengan-14-m.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/gandengan-lowboy-9m.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/gandengan-lowboy-12m.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('/assets/img/truck/Hino-Trailer.png') }}" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item">
+                          <img src="{{ asset('/assets/img/truck/fuso-trailer-8-piston.png') }}" class="d-block w-100" alt="Fuso Trailer 8 Piston" />
                         </div>
-                        <div class="col-xs-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-center">
-                            <a href="#carouselExampleControls" role="button" data-slide="next">
-                                <div class="carousel-nav-icon">
-                                    <span class="fas fa-chevron-right"></span>
-                                    {{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
-                                     </svg> --}}
-                                </div>
-                            </a>
+                        <div class="carousel-item">
+                          <img src="{{ asset('/assets/img/truck/fuso-trailer-10-piston.png') }}" class="d-block w-100" alt="Fuso Trailer 10 Piston" />
                         </div>
+                        <div class="carousel-item">
+                          <img src="{{ asset('/assets/img/truck/Gandengan-12m.png') }}" class="d-block w-100" alt="img3" />
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{ asset('/assets/img/truck/gandengan-14-m.png') }}" class="d-block w-100" alt="img3" />
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{ asset('/assets/img/truck/gandengan-lowboy-9m.png') }}" class="d-block w-100" alt="Fuso Trailer 10 Piston" />
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{ asset('/assets/img/truck/gandengan-lowboy-12m.png') }}" class="d-block w-100" alt="img3" />
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{ asset('/assets/img/truck/Hino-Trailer.png') }}" class="d-block w-100" alt="Fuso Trailer 10 Piston" />
+                        </div>
+                      </div>
+                      <a class="carousel-nav-icon-prev" href="#fleet-carousel" role="button" data-slide="prev">
+                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-nav-icon-next" href="#fleet-carousel" role="button" data-slide="next">
+                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
                 </div>
             </section>
@@ -334,6 +364,13 @@
         <!-- jQuery -->
         <script src="{{ asset('/assets/vendor/jquery/jquery-3.4.1.min.js') }}"></script>
         <script src="{{ asset('/assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+        <!-- Input Mask -->
+        <script src="{{ asset('/assets/vendor/input-mask/inputmask.js') }}"></script>
+        <script src="{{ asset('/assets/vendor/input-mask/bindings/inputmask.binding.js') }}"></script>
+
+        <!-- Validate -->
+        <script src="{{ asset('/assets/vendor/contact-form/validate.js') }}"></script>
+
         <!-- Popper -->
         <script src="{{ asset('/assets/vendor/popper/popper.min.js') }}"></script>
         <!-- Bootstrap -->
@@ -344,46 +381,5 @@
 
         <!-- Own JS -->
         <script src="{{ asset('/assets/js/gae.js') }}"></script>
-
-        <script>
-            $(document).ready(function() {
-                var owl = $('.owl-carousel');
-                owl.owlCarousel({
-                    items: 3,
-                    loop: false,
-                    rewind: true,
-                    margin: 10,
-                    autoHeight:true,
-                    autoplay: true,
-                    autoplayTimeout: 1000,
-                    autoplayHoverPause: true,
-                    // responsive: {
-                    //     0: {
-                    //         items: 1,
-                    //         nav: true
-                    //     },
-                    //     480: {
-                    //         items: 2,
-                    //         nav: false
-                    //     },
-                    //     768: {
-                    //         items: 3,
-                    //         nav: true,
-                    //         loop: false
-                    //     },
-                    //     992: {
-                    //         items: 4,
-                    //         nav: true,
-                    //         loop: false
-                    //     }
-                    // },
-                    // responsiveRefreshRate: 200,
-                    // responsiveBaseElement: window,
-                    dots: false,
-                    nav: true,
-                    navText: ["<div class='nav-btn prev-slide'><span class='fas fa-chevron-left'></span></div>","<div class='nav-btn next-slide'><span class='fas fa-chevron-right'></span></div>"],
-                });
-            });
-        </script>
     </body>
 </html>

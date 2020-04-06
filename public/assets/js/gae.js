@@ -1,3 +1,8 @@
+/*!
+  * GAE v1.0.0
+  * Copyright 2020
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  */
 !(function($) {
   "use strict";
 
@@ -62,6 +67,44 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $('.carousel').carousel();
+  $('.carousel').carousel({
+    interval: 5000
+  });
+
+  $(document).ready(function() {
+    var owl = $('.carousel-client');
+    owl.owlCarousel({
+      items: 1,
+			center: true,
+      loop: true,
+      rewind: true,
+      margin: 30,
+			stagePadding: 0,
+      autoHeight:true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        480: {
+          items: 2,
+        },
+        992: {
+          items: 3,
+        }
+      },
+      responsiveRefreshRate: 200,
+      responsiveBaseElement: window,
+      dots: false,
+      nav: true,
+      navText: ["<div class='nav-btn prev-slide'><span class='fas fa-chevron-left'></span></div>","<div class='nav-btn next-slide'><span class='fas fa-chevron-right'></span></div>"],
+    });
+  });
+
+  $( ".contact-form" ).submit(function(e) {
+    $('.validate').html('');
+    e.preventDefault();
+  });
 })(jQuery);
 
