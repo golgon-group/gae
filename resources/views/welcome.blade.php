@@ -31,26 +31,46 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
             <div class="container">
-                <a class="navbar-brand logo js-scroll-trigger" href="#page-top">
-                    <img src="{{ asset('/assets/img/logo.png') }}" alt="PT. Garuda Angkasa Ekspres" class="img-fluid">
-                </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mainNav">Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#getquote">Get a Quote</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#fleets">Our Fleets</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+              <a class="navbar-brand logo js-scroll-trigger" href="#page-top">
+                  <img src="{{ asset('/assets/img/logo.png') }}" alt="PT. Garuda Angkasa Ekspres" class="img-fluid">
+              </a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#mainNav">
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">
+                      About Us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#getquote">
+                      Get a Quote
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#fleets">
+                      Our Fleets
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
         </nav>
 
         <!-- Cover -->
-        <header id="cover" class="d-flex align-items-center text-white">
+        <header id="cover" class="page-section d-flex align-items-center text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -69,7 +89,7 @@
 
         <main role="main" id="main">
             <!-- About Us -->
-            <section id="about">
+            <section class="page-section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -91,7 +111,7 @@
             </section>
             
             <!-- Visi Misi -->
-            <section id="visimisi">
+            <section class="page-section" id="visimisi">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -117,7 +137,7 @@
             </section>
 
             <!-- Our Client -->
-            <section id="our-client">
+            <section class="page-section" id="our-client">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -162,7 +182,7 @@
             </section>
 
             <!-- Get Quote -->
-            <section id="getquote">
+            <section class="page-section" id="getquote">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-md-7 col-lg-6">
@@ -240,7 +260,7 @@
             </section>
             
             <!-- Our Fleets -->
-            <section id="fleets">
+            <section class="page-section" id="fleets">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -287,7 +307,7 @@
             </section>
             
             <!-- Contact -->
-            <section id="contact" class="pl-2">
+            <section class="py-5" id="contact" class="pl-2">
                 <div class="container">
                     <div class="row justify-content-center text-white">
                         <div class="col-xs-12 col-md-6">
@@ -363,6 +383,9 @@
         <a href="#page-top" class="back-to-top justify-content-center"><i class="fas fa-chevron-up"></i></a>
         <!-- jQuery -->
         <script src="{{ asset('/assets/vendor/jquery/jquery-3.4.1.min.js') }}"></script>
+        <script src="{{ asset('/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+        <!-- Easing JavaScript -->
         <script src="{{ asset('/assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
         <!-- Input Mask -->
         <script src="{{ asset('/assets/vendor/input-mask/inputmask.js') }}"></script>

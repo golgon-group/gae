@@ -29,24 +29,31 @@ class HomeController extends Controller
     //   ]
     // );
 
-    $keterangan = $request->input('keterangan');
-    $to_name = $request->input('fullname');
-    $to_email = $request->input('email');
-    $dataSales = array('name' => "No-Reply", "body" => "A test mail<br />" . $keterangan);
+    $fullname = $request->input('fullname');
+    $contact = $request->input('contact');
+    $email = $request->input('email');
+    $SalesMsg = $request->input('keterangan');
+    $ClientMsg = "Terima kasih telah mengirim email ke kami.
+                  Tim kami akan menindaklanjuti email kamu dan menghubungi mu di nomor $contact.
+                      
+                  Mohon Jangan mengirim SPAM
+                  terima kasih.";
+    $dataSales = array('name' => $fullname, "body" => $SalesMsg, "contact" => $contact, "email" => $email);
+    $dataClient = array('name' => $fullname, "body" => $ClientMsg);
     
     // Send to Sales
-    Mail::send('emails.sales', $dataSales, function($message) use ($to_name, $to_email) {
-      $message->to($to_email, $to_name)
+    Mail::send('emails.sales', $dataSales, function($message) {
+      $message->to('juniardi_it@golgon.co.id', 'PT. Golgon')
               ->subject('GAE Web Quotation');
-      $message->from('no-reply@garudaekspres.com','Test Mail');
+      $message->from('no-reply@garudaekspres.com','noreply');
     });
 
-    // // Send to Client
-    // Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) {
-    //   $message->to('golgongroup@gmail.com', 'PT. Golgon')
-    //           ->subject('GAE Web Quotation');
-    //   $message->from('no-reply@garudaekspres.com','Test Mail');
-    // });
+    // Send to Client
+    Mail::send('emails.client', $dataClient, function($message) use ($fullname, $email) {
+      $message->to($email, $fullname)
+              ->subject('GAE Web Quotation');
+      $message->from('no-reply@garudaekspres.com','noreply');
+    });
 
     $output = [
       'success' => 1,

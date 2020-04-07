@@ -1,2 +1,11 @@
-<h3>Halo, {{ $name }} !</h3>
-<p>{{ $body }}</p>
+<h4>Hi, {{ $name }} !</h4>
+{!! nl2br( $body ) !!}
+<br />
+<br />
+<br />
+<br />
+<b>Regards</b>
+<br />
+<br />
+<br />
+<label>PT. Garuda Angkasa Ekspres</label>
