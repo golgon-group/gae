@@ -7,6 +7,8 @@ jQuery(document).ready(function($) {
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+    
+    $('.validate').html('');
 
     f.children('input').each(function() { // run all inputs
      
@@ -108,15 +110,16 @@ jQuery(document).ready(function($) {
     $.ajax({
       type: "POST",
       url: action,
+      dataType: "json",
       data: str,
-      success: function(msg) {
-        if (msg == 'OK') {
+      success: function(data) {
+        if (data.success == true) {
           this_form.find('.loading').slideUp();
-          this_form.find('.sent-message').slideDown();
-          this_form.find("input:not(input[type=submit]), textarea").val('');
+          this_form.find('.sent-message').slideDown().html(data.msg);
+          // this_form.find("input:not(input[type=submit]), textarea").val('');
         } else {
           this_form.find('.loading').slideUp();
-          this_form.find('.error-message').slideDown().html(msg);
+          this_form.find('.error-message').slideDown().html(data.msg);
         }
       }
     });

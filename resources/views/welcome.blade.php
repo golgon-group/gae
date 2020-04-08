@@ -196,7 +196,7 @@
                         <div class="col">
                           <div class="form-group">
                             {!! Form::label('Full Name*') !!}
-                            {!! Form::text('fullname', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => 'required', 'data-msg' => 'Please input your full name']); !!}
+                            {!! Form::text('fullname', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => 'minlen:3', 'data-msg' => 'Please input your full name']); !!}
                             <div class="validate"></div>
                           </div>
                         </div>
@@ -237,18 +237,14 @@
                       <div class="form-group">
                         <div class="form-group">
                           {!! Form::label('Message*') !!}
-                          {!! Form::textarea('keterangan', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => "required", 'data-msg' => "Please write something for us"]); !!}
+                          {!! Form::textarea('keterangan', null, ['class' => 'form-control','placeholder' => '', 'data-rule' => "minlen:30", 'data-msg' => "Please write with 30 character for us"]); !!}
                           <div class="validate"></div>
                         </div>
                       </div>
                       <div class="mb-3">
                         <div class="loading">Loading</div>
-                        @if (session('status'))
-                          {{-- <input type="hidden" id="status_span" data-status="{{ session('status.success') }}" data-msg="{{ session('status.msg') }}"> --}}
-                          <div class="{{ session('status.class') }}">{{ session('status.msg') }}</div>
-                        @endif
-                        {{-- <div class="error-message"></div>
-                        <div class="sent-message">{{ session('status.msg') }}</div> --}}
+                        <div class="error-message"></div>
+                        <div class="sent-message"></div>
                       </div>
                       <div class="text-center">
                         <button type="submit">Request A Quote</button>
@@ -343,8 +339,8 @@
                                     <span class="fa fa-envelope"></span>
                                 </div>
                                 <div class="col">
-                                    <label>garuda_angkasa_ekspres@yahoo.com</label>
-                                    <label>pt.garuda_angkasa_ekspres@yahoo.com</label>
+                                    <label>marketing@garudaekspres.com</label>
+                                    {{-- <label>mkt@garudaekspres.id</label> --}}
                                 </div>
                             </div>
                             <div class="row">

@@ -41,26 +41,33 @@ class HomeController extends Controller
     $dataSales = array('name' => $fullname, "body" => $SalesMsg, "contact" => $contact, "email" => $email);
     $dataClient = array('name' => $fullname, "body" => $ClientMsg);
     
-    // Send to Sales
-    Mail::send('emails.sales', $dataSales, function($message) {
-      $message->to('juniardi_it@golgon.co.id', 'PT. Golgon')
-              ->subject('GAE Web Quotation');
-      $message->from('no-reply@garudaekspres.com','noreply');
-    });
+    try {
+      // Send to Sales
+      Mail::send('emails.sales', $dataSales, function($message) {
+        $message->to('marketing@garudaekspres.com', 'PT. Garuda Angkasa Ekspres')
+                ->subject('GAE Web Quotation');
+        $message->from('no-reply@garudaekspres.com','noreply');
+      });
+  
+      // Send to Client
+      Mail::send('emails.client', $dataClient, function($message) use ($fullname, $email) {
+        $message->to($email, $fullname)
+                ->subject('GAE Web Quotation');
+        $message->from('no-reply@garudaekspres.com','noreply');
+      });
+  
+      $output = array(
+        "success" => TRUE,
+        "msg" => "Your Quotation is Listed wait we contact you"
+      );
+    } catch (\Throwable $th) {
+  
+      $output = array(
+        "success" => FALSE,
+        "msg" => "Something wrong check you connection <br />".$th
+      );
+    }
 
-    // Send to Client
-    Mail::send('emails.client', $dataClient, function($message) use ($fullname, $email) {
-      $message->to($email, $fullname)
-              ->subject('GAE Web Quotation');
-      $message->from('no-reply@garudaekspres.com','noreply');
-    });
-
-    $output = [
-      'success' => 1,
-      'class' => 'sent-message',
-      'msg' => 'Your Quotation is Listed wait we contact you'
-    ];
-
-    return redirect('/')->with('status', $output);
+    return json_encode($output, JSON_PRETTY_PRINT);
   }
 }

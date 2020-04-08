@@ -102,10 +102,5 @@
       navText: ["<div class='nav-btn prev-slide'><span class='fas fa-chevron-left'></span></div>","<div class='nav-btn next-slide'><span class='fas fa-chevron-right'></span></div>"],
     });
   });
-
-  $( ".contact-form" ).submit(function(e) {
-    $('.validate').html('');
-    e.preventDefault();
-  });
 })(jQuery);
 
