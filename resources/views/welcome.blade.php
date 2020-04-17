@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>GAE Web Design</title>
+        <title>PT. Garuda Angkasa Ekspres</title>
         <meta content="" name="descriptison">
         <meta content="" name="keywords">
         <meta name="author" content="David Deutsch">
@@ -76,7 +76,7 @@
                     <div class="col-lg-6">
                         <h3 class="font-weight-bold">Welcome To</h3>
                         <h2 class="font-weight-bolder">PT. GARUDA ANGKASA EKSPRESS</h2>
-                        <hr />
+                        <hr style="height: 1px; background-color: #FFF;" />
                         <p class="lead">
                             Penyedia Jasa Pengangkutan dengan Profesionalisme kerja serta Komitman atas setiap pelayanan yang diberikan
                         </p>
@@ -275,7 +275,7 @@
                           <img src="{{ asset('/assets/img/truck/fuso-trailer-10-piston.png') }}" class="d-block w-100" alt="Fuso Trailer 10 Piston" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/Gandengan-12m.png') }}" class="d-block w-100" alt="img3" />
+                          <img src="{{ asset('/assets/img/truck/gandengan-12m.png') }}" class="d-block w-100" alt="img3" />
                         </div>
                         <div class="carousel-item">
                           <img src="{{ asset('/assets/img/truck/gandengan-14-m.png') }}" class="d-block w-100" alt="img3" />
@@ -287,7 +287,7 @@
                           <img src="{{ asset('/assets/img/truck/gandengan-lowboy-12m.png') }}" class="d-block w-100" alt="img3" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/Hino-Trailer.png') }}" class="d-block w-100" alt="Fuso Trailer 10 Piston" />
+                          <img src="{{ asset('/assets/img/truck/hino-trailer.png') }}" class="d-block w-100" alt="Fuso Trailer 10 Piston" />
                         </div>
                       </div>
                       <a class="carousel-nav-icon-prev" href="#fleet-carousel" role="button" data-slide="prev">
