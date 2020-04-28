@@ -342,8 +342,16 @@
                                 <h4><b>Our Location</b></h4>
                             </div>
                             <div class="row">
-                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3898.2291999492813!2d98.67312760972159!3d3.7488107262298134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf0847ea705339c!2sPT.GARUDA%20ANGKASA%20EKSPRES!5e0!3m2!1sen!2sid!4v1585729968801!5m2!1sen!2sid" width="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-                                <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?ll=3.748507,98.67494219999999&q=PT.GARUDA ANGKASA EKSPRES&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://techwithlove.com/how-to-know-who-viewed-my-whatsapp-profile/">www.techwithlove.com</a></div><style>.mapouter{position:relative;text-align:right;height:200px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div>
+                              <div class="mapouter">
+                                <div class="gmap_canvas">
+                                  <iframe id="gmap_frame" src="https://maps.google.com/maps?ll=3.748507,98.67494219999999&q=PT.GARUDA ANGKASA EKSPRES&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                </div>
+                                <style>
+                                  .mapouter {position:relative;height:300px;width:100%;}
+                                  .gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+                                  #gmap_frame {height:100%;width:100%}
+                                </style>
+                              </div>
                             </div>
                         </div>
                     </div>
