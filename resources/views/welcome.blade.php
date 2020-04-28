@@ -321,18 +321,10 @@
                             </div>
                             <div class="row">
                                 <div class="" style="width: 12px;">
-                                    <span class="fas fa-phone"></span>
+                                    <span class="fab fa-whatsapp"></span>
                                 </div>
                                 <div class="col">
-                                    <label>(061) 694 3988, (061) 694 3987</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="" style="width: 12px;">
-                                    <span class="fas fa-mobile-alt"></span>
-                                </div>
-                                <div class="col">
-                                    <label>+62 853 7224 9132, +62 852 7003 9191</label>
+                                    <label>+62 853 7224 9132, +62 813 7528 0616</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -342,14 +334,6 @@
                                 <div class="col">
                                     <label>marketing@garudaekspres.com</label>
                                     {{-- <label>mkt@garudaekspres.id</label> --}}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="" style="width: 12px;">
-                                    <span class="fa fa-fax"></span>
-                                </div>
-                                <div class="col">
-                                    <label>(061) 694 1766, (061) 694 2079</label>
                                 </div>
                             </div>
                         </div>
