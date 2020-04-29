@@ -32,11 +32,11 @@
         <!-- Easing JavaScript -->
         <script type="text/javascript" src="{{ asset('/assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
         <!-- Input Mask -->
-        <script type="text/javascript" src="{{ asset('/assets/vendor/input-mask/inputmask.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('/assets/vendor/input-mask/bindings/inputmask.binding.js') }}"></script>
+        <script async defer type="text/javascript" src="{{ asset('/assets/vendor/input-mask/inputmask.min.js') }}"></script>
+        <script async defer type="text/javascript" src="{{ asset('/assets/vendor/input-mask/bindings/inputmask.binding.js') }}"></script>
 
         <!-- Validate -->
-        <script type="text/javascript" src="{{ asset('/assets/vendor/contact-form/validate.min.js') }}"></script>
+        <script async defer type="text/javascript" src="{{ asset('/assets/vendor/contact-form/validate.min.js') }}"></script>
 
         <!-- Popper -->
         <script type="text/javascript" src="{{ asset('/assets/vendor/popper/popper.min.js') }}"></script>
@@ -47,7 +47,7 @@
         <script type="text/javascript" src="{{ asset('/assets/vendor/owl-carousel/dist/owl.carousel.min.js') }}"></script>
 
         <!-- Own JS -->
-        <script type="text/javascript" src="{{ asset('/assets/js/gae.min.js') }}"></script>
+        <script async defer type="text/javascript" src="{{ asset('/assets/js/gae.min.js') }}"></script>
 
 
         <!-- GAE Style CSS -->
