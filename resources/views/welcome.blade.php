@@ -2,38 +2,63 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8; IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>PT. Garuda Angkasa Ekspres</title>
         <meta content="" name="descriptison">
         <meta content="" name="keywords">
         <meta name="author" content="David Deutsch">
-        <link href="{{ asset('/assets/img/logo.png') }}" rel="icon">
+        <link type="image/x-icon" href="{{ asset('/assets/img/logo.png.webp') }}" rel="shortcut icon">
         
         <!-- <link rel="import" href="myfile.html" async> -->
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" async />
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" /> -->
+
         <!-- Bootstrap -->
-        <link href="{{ asset('/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" async />
+        <link type="text/css" href="{{ asset('/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
 
         <!-- Owl Carousel -->
-        <link href="{{ asset('/assets/vendor/owl-carousel/dist/assets/owl.carousel.min.css') }}" rel="stylesheet" async />
-        <link href="{{ asset('/assets/vendor/owl-carousel/dist/assets/owl.theme.default.min.css') }}" rel="stylesheet" async />
+        <link type="text/css" href="{{ asset('/assets/vendor/owl-carousel/dist/assets/owl.carousel.min.css') }}" rel="stylesheet" />
+        <link type="text/css" href="{{ asset('/assets/vendor/owl-carousel/dist/assets/owl.theme.default.min.css') }}" rel="stylesheet" />
 
         <!-- Font Awesome -->
-        <link href="{{ asset('/assets/vendor/fontawesome/css/all.min.css') }}" rel="stylesheet" async />
+        <link type="text/css" href="{{ asset('/assets/vendor/fontawesome/css/all.min.css') }}" rel="stylesheet" />
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="{{ asset('/assets/vendor/jquery/jquery-3.4.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+        <!-- Easing JavaScript -->
+        <script type="text/javascript" src="{{ asset('/assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+        <!-- Input Mask -->
+        <script type="text/javascript" src="{{ asset('/assets/vendor/input-mask/inputmask.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/assets/vendor/input-mask/bindings/inputmask.binding.js') }}"></script>
+
+        <!-- Validate -->
+        <script type="text/javascript" src="{{ asset('/assets/vendor/contact-form/validate.min.js') }}"></script>
+
+        <!-- Popper -->
+        <script type="text/javascript" src="{{ asset('/assets/vendor/popper/popper.min.js') }}"></script>
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="{{ asset('/assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+
+        <!-- Owl Carousel -->
+        <script type="text/javascript" src="{{ asset('/assets/vendor/owl-carousel/dist/owl.carousel.min.js') }}"></script>
+
+        <!-- Own JS -->
+        <script type="text/javascript" src="{{ asset('/assets/js/gae.min.js') }}"></script>
+
 
         <!-- GAE Style CSS -->
-        <link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet" async />
-
+        <link type="text/css" href="{{ asset('/assets/css/style.min.css') }}" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
             <div class="container">
               <a class="navbar-brand logo js-scroll-trigger" href="#page-top">
-                  <img src="{{ asset('/assets/img/logo.png') }}" alt="PT. Garuda Angkasa Ekspres" class="img-fluid lazyload">
+                  <img src="{{ asset('/assets/img/logo.png.webp') }}" alt="PT. Garuda Angkasa Ekspres" class="img-fluid lazyload">
               </a>
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <i class="fas fa-bars"></i>
@@ -267,28 +292,28 @@
                     <div id="fleet-carousel" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="{{ asset('/assets/img/truck/dump-truck.png') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
+                          <img src="{{ asset('/assets/img/truck/dump-truck.png.webp') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/fuso-trailer-8-piston.png') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 8 Piston" />
+                          <img src="{{ asset('/assets/img/truck/fuso-trailer-8-piston.png.webp') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 8 Piston" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/fuso-trailer-10-piston.png') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
+                          <img src="{{ asset('/assets/img/truck/fuso-trailer-10-piston.png.webp') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/gandengan-12m.png') }}" class="d-block w-100 lazyload" alt="img3" />
+                          <img src="{{ asset('/assets/img/truck/gandengan-12m.png.webp') }}" class="d-block w-100 lazyload" alt="img3" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/gandengan-14-m.png') }}" class="d-block w-100 lazyload" alt="img3" />
+                          <img src="{{ asset('/assets/img/truck/gandengan-14-m.png.webp') }}" class="d-block w-100 lazyload" alt="img3" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/gandengan-lowboy-9m.png') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
+                          <img src="{{ asset('/assets/img/truck/gandengan-lowboy-9m.png.webp') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/gandengan-lowboy-12m.png') }}" class="d-block w-100 lazyload" alt="img3" />
+                          <img src="{{ asset('/assets/img/truck/gandengan-lowboy-12m.png.webp') }}" class="d-block w-100 lazyload" alt="img3" />
                         </div>
                         <div class="carousel-item">
-                          <img src="{{ asset('/assets/img/truck/hino-trailer.png') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
+                          <img src="{{ asset('/assets/img/truck/hino-trailer.png.webp') }}" class="d-block w-100 lazyload" alt="Fuso Trailer 10 Piston" />
                         </div>
                       </div>
                       <a class="carousel-nav-icon-prev" href="#fleet-carousel" role="button" data-slide="prev">
@@ -370,28 +395,5 @@
         </footer>
 
         <a href="#page-top" class="back-to-top justify-content-center"><i class="fas fa-chevron-up"></i></a>
-        <!-- jQuery -->
-        <script src="{{ asset('/assets/vendor/jquery/jquery-3.4.1.min.js') }}"></script>
-        <script src="{{ asset('/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
-        <!-- Easing JavaScript -->
-        <script src="{{ asset('/assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-        <!-- Input Mask -->
-        <script src="{{ asset('/assets/vendor/input-mask/inputmask.min.js') }}"></script>
-        <script src="{{ asset('/assets/vendor/input-mask/bindings/inputmask.binding.js') }}"></script>
-
-        <!-- Validate -->
-        <script src="{{ asset('/assets/vendor/contact-form/validate.min.js') }}"></script>
-
-        <!-- Popper -->
-        <script src="{{ asset('/assets/vendor/popper/popper.min.js') }}"></script>
-        <!-- Bootstrap -->
-        <script src="{{ asset('/assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-
-        <!-- Owl Carousel -->
-        <script src="{{ asset('/assets/vendor/owl-carousel/dist/owl.carousel.min.js') }}"></script>
-
-        <!-- Own JS -->
-        <script src="{{ asset('/assets/js/gae.min.js') }}"></script>
     </body>
 </html>
