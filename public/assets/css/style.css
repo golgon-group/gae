@@ -194,7 +194,7 @@ h6,
   height: calc(40vh - 72px);
   /* margin: 72px 0; */
   margin-top: 72px;
-  background: linear-gradient(rgba(245, 130, 32, .75), rgba(245, 130, 32, .75)), url(/assets/img/header-bg.jpg) no-repeat center;
+  background: linear-gradient(rgba(245, 130, 32, .75), rgba(245, 130, 32, .75)), url(/assets/img/header-bg.jpg.webp) no-repeat center;
   background-size: cover;
 }
 
@@ -252,7 +252,7 @@ h6,
   height: 50vh;
   padding: 2em 1em;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(/assets/img/vm-bg.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(/assets/img/vm-bg.jpg.webp) no-repeat center;
   background-position: 50% 5%;
   background-size: cover;
   background-blend-mode: multiply;
@@ -357,7 +357,7 @@ h6,
   width: 100%;
   height: auto;
   padding: 2em .5em;
-  background: url(/assets/img/form-bg.jpg) no-repeat center;
+  background: url(/assets/img/form-bg.jpg.webp) no-repeat center;
   background-size: cover;
 }
 
@@ -482,7 +482,7 @@ h6,
   width: 100%;
   height: calc(70vh);
   padding: 2em .5em;
-  background: linear-gradient(rgba(251, 252, 252, .4), rgba(251, 252, 252, .4)), url(/assets/img/fleets-bg.jpg) no-repeat center;
+  background: linear-gradient(rgba(251, 252, 252, .4), rgba(251, 252, 252, .4)), url(/assets/img/fleets-bg.jpg.webp) no-repeat center;
   background-size: cover;
 }
 

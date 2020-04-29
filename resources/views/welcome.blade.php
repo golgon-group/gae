@@ -149,32 +149,32 @@
                         <div class="carousel-client owl-carousel owl-theme" id="owl-client">
                             <div class="item">
                               <div class="animated">
-                                <img src="{{ asset('/assets/img/client/chevron.jpg') }}" alt="Chevron" class="client-image lazyload">
+                                <img src="{{ asset('/assets/img/client/chevron.jpg.webp') }}" alt="Chevron" class="client-image lazyload">
                               </div>
                             </div>
                             <div class="item">
                               <div class="animated">
-                                <img src="{{ asset('/assets/img/client/golgon.jpg') }}" alt="Golgon" class="client-image lazyload">
+                                <img src="{{ asset('/assets/img/client/golgon.jpg.webp') }}" alt="Golgon" class="client-image lazyload">
                               </div>
                             </div>
                             <div class="item">
                               <div class="animated">
-                                <img src="{{ asset('/assets/img/client/growth_steel.jpg') }}" alt="Growth Steel" class="client-image lazyload">
+                                <img src="{{ asset('/assets/img/client/growth_steel.jpg.webp') }}" alt="Growth Steel" class="client-image lazyload">
                               </div>
                             </div>
                             <div class="item">
                               <div class="animated">
-                                <img src="{{ asset('/assets/img/client/Indonesia_Fibreboard.jpg') }}" alt="Indonesia Fibreboard" class="client-image lazyload">
+                                <img src="{{ asset('/assets/img/client/Indonesia_Fibreboard.jpg.webp') }}" alt="Indonesia Fibreboard" class="client-image lazyload">
                               </div>
                             </div>
                             <div class="item">
                               <div class="animated">
-                                <img src="{{ asset('/assets/img/client/Putra_baja_deli.jpg') }}" alt="Putra Baja Deli" class="client-image">
+                                <img src="{{ asset('/assets/img/client/Putra_baja_deli.jpg.webp') }}" alt="Putra Baja Deli" class="client-image">
                               </div>
                             </div>
                             <div class="item">
                               <div class="animated">
-                                <img src="{{ asset('/assets/img/client/Wika_Beton.jpg') }}" alt="Wika Beton" class="client-image lazyload">
+                                <img src="{{ asset('/assets/img/client/Wika_Beton.jpg.webp') }}" alt="Wika Beton" class="client-image lazyload">
                               </div>
                             </div>
                         </div>
@@ -324,7 +324,7 @@
                                     <span class="fab fa-whatsapp"></span>
                                 </div>
                                 <div class="col">
-                                    <label>+62 853 7224 9132, +62 813 7528 0616</label>
+                                    <label>+62 821 8101 1737, +62 813 7528 0616</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -333,7 +333,6 @@
                                 </div>
                                 <div class="col">
                                     <label>marketing@garudaekspres.com</label>
-                                    {{-- <label>mkt@garudaekspres.id</label> --}}
                                 </div>
                             </div>
                         </div>
