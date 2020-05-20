@@ -48,7 +48,8 @@
 
         <!-- Own JS -->
         <script async defer type="text/javascript" src="{{ asset('/assets/js/gae.min.js') }}"></script>
-
+        <!-- hCaptcha -->
+        <script src="https://hcaptcha.com/1/api.js" async defer></script>
 
         <!-- GAE Style CSS -->
         <link type="text/css" href="{{ asset('/assets/css/style.min.css') }}" rel="stylesheet" />
@@ -267,6 +268,9 @@
                           <div class="validate"></div>
                         </div>
                       </div>
+                      <div class="mb-2 text-center">
+                        <div class="h-captcha" data-sitekey="e1791330-d333-416d-ad20-d49859add06a"></div>
+                      </div>
                       <div class="mb-3">
                         <div class="loading">Loading</div>
                         <div class="error-message"></div>
@@ -349,7 +353,7 @@
                                     <span class="fab fa-whatsapp"></span>
                                 </div>
                                 <div class="col">
-                                    <label>+62 821 8101 1737, +62 813 7528 0616</label>
+                                    <label>+62 853 6931 9505, +62 813 7528 0616</label>
                                 </div>
                             </div>
                             <div class="row">
