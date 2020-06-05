@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>PT. Garuda Angkasa Ekspres</title>
-        <meta content="" name="descriptison">
-        <meta content="" name="keywords">
-        <meta name="author" content="David Deutsch">
+        <meta content="Penyedia Jasa Pengangkutan dengan Profesionalisme kerja serta Komitman atas setiap pelayanan yang diberikan" name="description">
+        <meta content="garuda angkasa, garuda angkasa ekspress, pengangkutan, pengangkutan truck area medan, pengangkutan truk, angkutan barang muatan, indonesia, mudah terpercaya" name="keywords">
+        <meta name="author" content="Golgon">
         <link type="image/x-icon" href="{{ asset('/assets/img/logo.png.webp') }}" rel="shortcut icon">
         
         <!-- <link rel="import" href="myfile.html" async> -->
